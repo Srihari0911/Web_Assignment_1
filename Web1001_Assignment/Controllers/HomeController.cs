@@ -1,8 +1,8 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Web1001_Assignment.Models;
+using WEB1001_Assignment_1.Models;
 
-namespace Web1001_Assignment.Controllers;
+namespace WEB1001_Assignment_1.Controllers;
 
 public class HomeController : Controller
 {
@@ -14,6 +14,11 @@ public class HomeController : Controller
     }
 
     public IActionResult Index()
+    {
+        return View();
+    }
+
+    public IActionResult Intro()
     {
         return View();
     }
